@@ -1,0 +1,553 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Stars Forgot Us</title>
+
+    <style>
+        /* GENERAL PAGE STYLE */
+
+        body {
+            background-color: #F8F5EE;
+            color: #40574B;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        /* TOP HEADER */
+
+        header {
+            background-color: #B7E4C7;
+            text-align: center;
+            padding: 45px 20px;
+            border-bottom: 5px solid #FFCFB3;
+        }
+
+        header h1 {
+            color: #24513B;
+            font-family: Georgia, serif;
+            font-size: 42px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #527B68;
+            font-style: italic;
+        }
+
+        /* NAVIGATION MENU */
+
+        nav {
+            background-color: #FFCFB3;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #75432F;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #24513B;
+            text-decoration: underline;
+        }
+
+        /* MAIN CONTENT */
+
+        main {
+            max-width: 950px;
+            margin: auto;
+            padding: 25px;
+        }
+
+        h2 {
+            color: #24513B;
+            border-left: 6px solid #FFCFB3;
+            padding-left: 12px;
+        }
+
+        h3 {
+            color: #75432F;
+        }
+
+        /* CHARACTER CARDS */
+
+        .characters {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .character-card {
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #B7E4C7;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px #D7D7C8;
+            border-color: #FFCFB3;
+        }
+
+        .character-card h3 {
+            margin-top: 0;
+        }
+
+        /* SCENE INDEX */
+
+        .scene-index {
+            background-color: #FFCFB3;
+            padding: 20px 30px;
+            border-radius: 15px;
+        }
+
+        .scene-index a {
+            color: #75432F;
+            text-decoration: none;
+        }
+
+        .scene-index a:hover {
+            text-decoration: underline;
+            color: #24513B;
+        }
+
+        /* SCENE CARDS */
+
+        .scene {
+            background-color: white;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 15px;
+            border-top: 5px solid #B7E4C7;
+            box-shadow: 0 3px 10px #E5E0D7;
+            scroll-margin-top: 20px;
+        }
+
+        .scene:nth-of-type(even) {
+            border-top-color: #FFCFB3;
+        }
+
+        .location {
+            color: #527B68;
+            font-style: italic;
+        }
+
+        .purpose {
+            background-color: #EAF5E9;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* ENDING SECTION */
+
+        .ending {
+            background-color: #B7E4C7;
+            color: #24513B;
+            padding: 30px;
+            margin-top: 35px;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .ending h2 {
+            border: none;
+            padding: 0;
+        }
+
+        .final-message {
+            background-color: #FFF9F2;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: Georgia, serif;
+            font-style: italic;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #FFCFB3;
+            color: #75432F;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* SMALL SCREEN SUPPORT */
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .characters {
+                grid-template-columns: 1fr;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Stars Forgot Us</h1>
+        <p>A story of love, fate, and second chances.</p>
+        <p>Supernatural Romance • Fantasy • Mystery</p>
+    </header>
+
+    <nav>
+        <a href="#characters">Characters</a>
+        <a href="#scene-index">Scene Index</a>
+        <a href="#scene1">The Script</a>
+        <a href="#ending">Ending</a>
+    </nav>
+
+    <main>
+
+        <!-- CHARACTERS -->
+
+        <section id="characters">
+            <h2>I. Characters</h2>
+
+            <div class="characters">
+
+                <div class="character-card">
+                    <h3>1. Mira — Female Lead</h3>
+                    <p>Competitive, observant, and stubborn. Resents Eli after he humiliates her during an academic competition.</p>
+                </div>
+
+                <div class="character-card">
+                    <h3>2. Eli — Male Lead</h3>
+                    <p>Intelligent, reserved, and unintentionally awkward. Beneath his competitive nature, he's thoughtful and kind.</p>
+                </div>
+
+                <div class="character-card">
+                    <h3>3. Bianca — Mira's Best Friend</h3>
+                    <p>Playful, teasing, and supportive. Notices Mira's feelings before Mira admits them to herself.</p>
+                </div>
+
+                <div class="character-card">
+                    <h3>4. Celeste — The Researcher</h3>
+                    <p>Curious and determined. Discovers the old book and investigates the original couple's history.</p>
+                </div>
+
+                <div class="character-card">
+                    <h3>5. Dani — The Skeptic</h3>
+                    <p>Practical and outspoken. Dismisses supernatural explanations until the evidence becomes undeniable.</p>
+                </div>
+
+                <div class="character-card">
+                    <h3>6. Lila — The Secret-Keeper</h3>
+                    <p>Quiet and cautious. Knows her family is connected to the old feud and struggles to reveal the truth.</p>
+                </div>
+
+                <div class="character-card">
+                    <h3>7. Noah — Eli's Best Friend</h3>
+                    <p>Friendly and teasing. Knows Eli's softer side and initially warns him against getting involved with Mira.</p>
+                </div>
+
+                <div class="character-card">
+                    <h3>8. Iris — Cupid in Disguise</h3>
+                    <p>Appears to be an ordinary girl whom Mira once helped. Secretly connects Mira and Eli through an invisible red string, hoping to reunite two souls across lifetimes.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SCENE INDEX -->
+
+        <section id="scene-index">
+            <h2>II. Scene Index</h2>
+
+            <div class="scene-index">
+                <ol>
+                    <li><a href="#scene1">The Wrong Answer</a></li>
+                    <li><a href="#scene2">Cupid's Little Intervention</a></li>
+                    <li><a href="#scene3">The Unwanted Partnership</a></li>
+                    <li><a href="#scene4">The Book That Remembers</a></li>
+                    <li><a href="#scene5">Little Things Change</a></li>
+                    <li><a href="#scene6">The Missing Page</a></li>
+                    <li><a href="#scene7">The Curse Was a Lie</a></li>
+                    <li><a href="#scene8">Across Every Lifetime</a></li>
+                    <li><a href="#scene9">A Different Choice</a></li>
+                    <li><a href="#scene10">A Different Ending</a></li>
+                    <li><a href="#scene11">The Stars Remember</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- SCRIPT -->
+
+        <section id="script">
+            <h2>III. The Script</h2>
+
+            <div class="scene" id="scene1">
+                <h3>SCENE 1: The Wrong Answer</h3>
+                <p class="location">Location: School hall / classroom</p>
+
+                <p>The film opens with a school academic competition attended by students and classmates.</p>
+
+                <p>Mira confidently answers a question, but Eli publicly corrects her answer and wins the round.</p>
+
+                <p>The audience reacts, and Mira feels humiliated. She gathers her things and leaves, avoiding Eli's gaze.</p>
+
+                <p>Eli notices her reaction but doesn't approach her.</p>
+
+                <p>Bianca comforts Mira while Noah congratulates Eli.</p>
+
+                <p>Later, Mira helps Iris, an apparently ordinary girl, pick up some scattered belongings.</p>
+
+                <p>Iris notices Mira's lingering frustration toward Eli and watches the two rivals from a distance.</p>
+
+                <p class="purpose"><b>Purpose:</b> Establish the rivalry.</p>
+            </div>
+
+            <div class="scene" id="scene2">
+                <h3>SCENE 2: Cupid's Little Intervention</h3>
+                <p class="location">Location: School courtyard</p>
+
+                <p>Mira and Eli pass each other in the courtyard, exchanging an irritated glance.</p>
+
+                <p>Neither notices Iris watching from nearby.</p>
+
+                <p>Once they're apart, Iris raises her hand and mysteriously ties an invisible red string around their little fingers.</p>
+
+                <p>For a brief moment, the string glows faintly in the sunlight before disappearing.</p>
+
+                <p>Iris smiles knowingly and walks away.</p>
+
+                <p class="purpose"><b>Purpose:</b> Introduce the supernatural connection.</p>
+            </div>
+
+            <div class="scene" id="scene3">
+                <h3>SCENE 3: The Unwanted Partnership</h3>
+                <p class="location">Location: Classroom</p>
+
+                <p>The literature teacher assigns a project requiring students to explore an unusual historical or literary story.</p>
+
+                <p>Mira and Eli are paired together.</p>
+
+                <p>Mira looks displeased, while Eli appears surprised but accepts the assignment.</p>
+
+                <p>Bianca notices Mira's reaction and teases her afterward.</p>
+
+                <p>Noah encourages Eli to take the project seriously, though he notices Eli glancing toward Mira.</p>
+
+                <p>Mira and Eli reluctantly agree to search the library for an original topic.</p>
+
+                <p class="purpose"><b>Purpose:</b> Force the rivals to spend time together.</p>
+            </div>
+
+            <div class="scene" id="scene4">
+                <h3>SCENE 4: The Book That Remembers</h3>
+                <p class="location">Location: School library</p>
+
+                <p>Mira and Eli search through old books, disagreeing over which topic would make their project stand out.</p>
+
+                <p>Celeste, searching nearby, discovers a dusty book containing handwritten letters, faded photographs, and an incomplete account of two forbidden lovers.</p>
+
+                <p>The group gathers around the discovery.</p>
+
+                <p>One photograph shows a young couple whose faces look exactly like Mira and Eli.</p>
+
+                <p>Everyone is startled. Dani suspects a coincidence, while Bianca jokingly suggests reincarnation.</p>
+
+                <p>Mira immediately dismisses the possibility and refuses to entertain the idea of being connected to Eli in any way.</p>
+
+                <p>Celeste convinces the group to investigate the book further for their project.</p>
+
+                <p class="purpose"><b>Purpose:</b> Introduce the mystery and the original lovers.</p>
+            </div>
+
+            <div class="scene" id="scene5">
+                <h3>SCENE 5: Little Things Change</h3>
+                <p class="location">Location: Classroom / hallway / library</p>
+
+                <p>A short montage shows Mira and Eli slowly growing closer while working on their project.</p>
+
+                <ul>
+                    <li>Eli saves Mira a seat without mentioning it.</li>
+                    <li>Mira notices Eli has remembered which notes belong to her and quietly returns a pen he left behind.</li>
+                    <li>They reach for the same book and accidentally touch hands, both quickly withdrawing.</li>
+                    <li>Mira catches Eli smiling at one of her silly mistakes.</li>
+                    <li>Eli helps Mira organize their materials after she accidentally drops them.</li>
+                    <li>Bianca catches Mira watching Eli and teases her.</li>
+                    <li>Noah notices Eli keeping a small paper star Mira made during their project.</li>
+                </ul>
+
+                <p>Mira begins noticing that Eli isn't as arrogant or insensitive as she first believed.</p>
+
+                <p>Meanwhile, Celeste researches the original couple, Dani searches for evidence, and Lila becomes increasingly uncomfortable whenever the old families are mentioned.</p>
+
+                <p class="purpose"><b>Purpose:</b> Develop the romance and show minor conflicts.</p>
+            </div>
+
+            <div class="scene" id="scene6">
+                <h3>SCENE 6: The Missing Page</h3>
+                <p class="location">Location: Library</p>
+
+                <p>Mira finishes reading the old book and discovers that its final page has been torn out.</p>
+
+                <p>The missing ending leaves the original couple's fate uncertain.</p>
+
+                <p>Mira returns to the library alone to search for the page.</p>
+
+                <p>Eli is already there, holding the missing page.</p>
+
+                <p>He reveals that he found it tucked inside another old book while researching their project.</p>
+
+                <p>Mira is surprised that he continued investigating on his own.</p>
+
+                <p>Their earlier hostility gives way to a more serious conversation about the legend and reincarnation.</p>
+
+                <p>Eli appears genuinely fascinated by the idea that two souls might find each other in different lifetimes. Mira, despite her skepticism, begins to wonder about their strange connection.</p>
+
+                <p class="purpose"><b>Purpose:</b> Bring the leads closer and prepare for the major reveal.</p>
+            </div>
+
+            <div class="scene" id="scene7">
+                <h3>SCENE 7: The Curse Was a Lie</h3>
+                <p class="location">Location: Library / empty classroom</p>
+
+                <p>Eli shows Mira the missing page and the evidence he found in the old records.</p>
+
+                <p>Lila finally admits that her family knows part of the original story.</p>
+
+                <p>Celeste pieces together the letters and family histories.</p>
+
+                <p>The original lovers belonged to two families who opposed their relationship.</p>
+
+                <p>Their families fabricated the curse to keep the lovers apart and preserve an old feud.</p>
+
+                <p>The group realizes that the supernatural legend was built around a real act of separation.</p>
+
+                <p>Mira and Eli recognize that their own families are connected to the same history.</p>
+
+                <p>Mira becomes frightened by the possibility that their relationship could repeat the tragedy, while Eli feels an inexplicable familiarity with the original couple.</p>
+
+                <p class="purpose"><b>Purpose:</b> Reveal that the curse was fabricated by people.</p>
+            </div>
+
+            <div class="scene" id="scene8">
+                <h3>SCENE 8: Across Every Lifetime</h3>
+                <p class="location">Location: Various school locations</p>
+
+                <p>Mira and Eli look at the original photograph together.</p>
+
+                <p>As they study it, the film transitions into a sequence of dreamlike images representing their past lives.</p>
+
+                <p>Different versions of the two meet in different eras and places.</p>
+
+                <ul>
+                    <li>In one lifetime, they meet as strangers and become friends.</li>
+                    <li>In another, they begin as rivals, constantly challenging one another.</li>
+                    <li>In another, they share quiet, tender moments before their families separate them.</li>
+                </ul>
+
+                <p>Each lifetime ends with the pair being pulled apart by conflict, misunderstanding, or circumstances beyond their control.</p>
+
+                <p>The montage returns to the present, where Mira and Eli are standing beside each other, visibly emotional.</p>
+
+                <p>They begin to understand that the photograph and their strange familiarity may represent souls that have repeatedly found each other.</p>
+
+                <p class="purpose"><b>Purpose:</b> Show the emotional supernatural reveal.</p>
+            </div>
+
+            <div class="scene" id="scene9">
+                <h3>SCENE 9: A Different Choice</h3>
+                <p class="location">Location: Old classroom</p>
+
+                <p>Mira and Eli sit together with the letters and photograph between them.</p>
+
+                <p>Eli reveals that his feelings for Mira have grown beyond their original rivalry.</p>
+
+                <p>Mira, after a moment of hesitation, acknowledges that her feelings have changed too.</p>
+
+                <p>Rather than making a dramatic declaration, they share a quiet moment of mutual understanding.</p>
+
+                <p>Mira returns the little paper star Eli kept from their project, then lets him keep it.</p>
+
+                <p>They decide that their past lives and family histories should not determine what they do in the present.</p>
+
+                <p class="purpose"><b>Purpose:</b> Resolve the emotional conflict through choice rather than fate alone.</p>
+            </div>
+
+            <div class="scene" id="scene10">
+                <h3>SCENE 10: A Different Ending</h3>
+                <p class="location">Location: Classroom / courtyard</p>
+
+                <p>Mira and Eli complete their literature project by exposing the truth behind the fabricated curse.</p>
+
+                <p>Their friends help organize the letters, photograph, and historical evidence for their presentation.</p>
+
+                <p>The original photograph changes one final time: the lovers who once stood apart now appear together, peaceful and smiling.</p>
+
+                <p>Mira and Eli present the story as one of love, prejudice, and the freedom to choose one's future.</p>
+
+                <p>Afterward, they walk into the courtyard together, no longer hiding their closeness.</p>
+
+                <p>Bianca notices their linked hands and excitedly nudges the others.</p>
+
+                <p class="purpose"><b>Purpose:</b> Break the cycle and give the characters their happy ending.</p>
+            </div>
+
+            <div class="scene" id="scene11">
+                <h3>SCENE 11: The Stars Remember</h3>
+                <p class="location">Location: School courtyard</p>
+
+                <p>Iris watches Mira and Eli from a distance as they leave with their friends.</p>
+
+                <p>She looks down at her hand, where a faint red glow briefly appears.</p>
+
+                <p>For an instant, the invisible string between Mira and Eli becomes visible in the sunlight.</p>
+
+                <p>Iris's ordinary appearance gives way to a subtle, otherworldly presence, hinting at her true identity as Cupid.</p>
+
+                <p>She watches the couple walk away together, satisfied that the two souls have finally reached a different ending.</p>
+
+                <p>The camera lingers on the old photograph, now showing the original lovers together.</p>
+
+                <p class="purpose"><b>Purpose:</b> Reveal Iris's identity and close the supernatural story.</p>
+            </div>
+
+        </section>
+
+        <!-- FINAL MESSAGE -->
+
+        <section class="ending" id="ending">
+            <h2>The End</h2>
+
+            <p class="final-message">
+                "No matter how many lifetimes pass or how many obstacles separate two souls, they may find each other again, but a happy ending comes when they choose one another."
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>The Stars Forgot Us</p>
+        <p>A story about love, fate, and choosing your own ending. &#10022;</p>
+    </footer>
+
+</body>
+</html>
